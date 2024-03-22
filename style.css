@@ -8,7 +8,9 @@ body{
     height: auto;
     border: 3px solid black;
 }
-h2,h3{
+h2,h4{
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-align: center;
 }
 .third-heading{
@@ -31,7 +33,7 @@ span{
     background-color: black;
 }
 .choice-shown{
-    background-color: gray;
+    background-color:#343434;
     height: 90px;
 }
 .options{
@@ -41,6 +43,7 @@ span{
 .rock, .paper, .scissor {
 padding: 5px;
 margin-left: 2%;
+margin-bottom: 1%;
 border-radius: 20px;
 background-color: black;
 }
