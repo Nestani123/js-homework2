@@ -19,13 +19,13 @@
     <div class="boxes">
       <div class="me-box">
         <div class="result-bar">
-          <span>You: </span>
+          <span class="player">You: </span>
         </div>
         <div class="choice-shown"></div>
       </div>
       <div class="computer-box">
         <div class="result-bar">
-          <span>Computer: </span>
+          <span class="computer">Computer: </span>
         </div>
         <div class="choice-shown"></div>
       </div>
@@ -33,9 +33,9 @@
 
     <h4 class="third-heading">Choose One !</h4>
     <div class="options">
-      <button class="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-      <button class="paper"><i class="fa-regular fa-hand"></i></button>
-      <button class="scissor">
+      <button onclick = "playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+      <button onclick = "playGame('paper')"><i class="fa-regular fa-hand"></i></button>
+      <button onclick = "playGame('scissor')">
         <i class="fa-regular fa-hand-scissors"></i>
       </button>
     </div>

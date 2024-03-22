@@ -40,12 +40,13 @@ span{
     display: flex;
     justify-content: center;
 }
-.rock, .paper, .scissor {
+button {
 padding: 5px;
 margin-left: 2%;
 margin-bottom: 1%;
 border-radius: 20px;
 background-color: black;
+cursor: pointer;
 }
 i{
     color: orange;
