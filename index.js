@@ -13,24 +13,21 @@ choiceBtnList[i].addEventListener('click', () => {
     const rendomNumber = Math.floor(Math.random()*3);
     userChoice.textContent = choiceBtnList[i].textContent;
     computerChoice.textContent = choiceBtnList[rendomNumber].textContent;
-
-    if(userChoice.textContent===computerChoice.textContent){
-        console.log("draw")
-    }
-        else if((userChoice.textContent==='🪨'&&computerChoice.textContent==='✂')||
-            (userChoice.textContent==='✂'&&computerChoice.textContent==='📄')||
-            (userChoice.textContent==='📄'&&computerChoice.textContent==='🪨')){
-                userScore.textContent = Number(userScore.textContent)+1;
-
-            } else {
-                computerScore.textContent = Number(computerScore.textContent)+1;
-
-            }
-
+   
+   
+   if(userChoice.textContent===computerChoice.textContent){
+    console.log("Draw");
+   }else if((userChoice.textContent === "📄" && computerChoice.textContent === "🪨") ||
+    (userChoice.textContent === "🪨" && computerChoice.textContent === "✂") ||
+    (userChoice.textContent === "✂" && computerChoice.textContent === "📄")){
+        userScore.textContent = Number(userScore.textContent) + 1;
+    } else {
+            computerScore.textContent = Number(computerScore.textContent) + 1;
         }
 
-);
+    });
     }
+
     
 
 
