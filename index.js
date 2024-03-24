@@ -22,8 +22,8 @@ choiceBtnList[i].addEventListener('click', () => {
    if(userChoice.textContent===computerChoice.textContent){
     console.log("Draw");
    }else if((userChoice.textContent === "📄" && computerChoice.textContent === "🪨") ||
-    (userChoice.textContent === "🪨" && computerChoice.textContent === "✂") ||
-    (userChoice.textContent === "✂" && computerChoice.textContent === "📄")){
+    (userChoice.textContent === "🪨" && computerChoice.textContent === "✂️") ||
+    (userChoice.textContent === "✂️" && computerChoice.textContent === "📄")){
         userScore.textContent = Number(userScore.textContent) + 1;
         counterUser++;
         checkResult(counterUser);
@@ -37,9 +37,9 @@ choiceBtnList[i].addEventListener('click', () => {
         function checkResult(result){
         if(result===10){
             if(userScore.textContent>computerScore.textContent){
-                heading.textContent = "You lost!";
+                heading.textContent = "You Lost!";
             }else if(computerScore.textContent>userScore.textContent){
-                heading.textContent = "You won!";
+                heading.textContent = "You Won!";
             }else{
                 heading.textContent = "It's a tie";
             }
