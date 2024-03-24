@@ -1,28 +1,17 @@
-const choices = ["rock", "paper", "scissor"];
-const player = document.querySelector(".player");
-const computer = document.querySelector(".computer");
+const userScore = document.querySelector("#you-score");
+const userChoice = document.querySelector("#user-choice");
 
-function playGame(playerChoice){
-    const computerChoice = choices[Math.floor((Math.random)*3)];
-    let result = "";
-    if(playerChoice===computerChoice){
-        console.log(result = "It's a tie!")
-    }else{
-        switch(playerChoice){
-            case "rock": 
-            result = (computerChoice==="scissor") ? "You win" : "You lose";
-            break;
+const computerScore = document.querySelector("#computer-score");
+const computerChoice = document.querySelector("#computer-choice");
 
-            case "paper": 
-            result = (computerChoice==="rock") ? "You win" : "You lose";
-            break;
+const choiceBtnList = document.querySelectorAll(".button-choice");
 
-            case "scissor": 
-            result = (computerChoice==="paper") ? "You win" : "You lose";
-            break;
-        }
-    }
-
-    player.textContent = `PLAYER: ${playerChoice}`
-    player.textContent = `COMPUTER: ${computerChoice}`
+for(let i=0; i<choiceBtnList.length; i++){
+choiceBtnList[i].addEventListener('click', () => {
+    const rendomNumber = Math.floor(Math.random()*3);
+    userChoice.textContent = choiceBtnList[i].textContent;
+    computerChoice.textContent = choiceBtnList[rendomNumber].textContent;
+})
 }
+
+

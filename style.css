@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.game{
     width: 100%;
     height: auto;
     border: 3px solid black;
@@ -32,10 +32,14 @@ span{
 .result-bar{
     background-color: black;
 }
-.choice-shown{
+#user-choice, #computer-choice{
+    display: flex;
     background-color:#343434;
     height: 90px;
+    justify-content: center;
+    color: white;
 }
+
 .options{
     display: flex;
     justify-content: center;
@@ -48,7 +52,7 @@ border-radius: 20px;
 background-color: black;
 cursor: pointer;
 }
-i{
+.button-choice{
     color: orange;
 
 }
