@@ -15,9 +15,9 @@ choiceBtnList[i].addEventListener('click', () => {
     if(userChoice.textContent===computerChoice.textContent){
         console.log("draw")
     }
-        else if(userChoice.textContent==='🪨'&&computerChoice.textContent==='✂')||
+        else if((userChoice.textContent==='🪨'&&computerChoice.textContent==='✂')||
             (userChoice.textContent==='✂'&&computerChoice.textContent==='📄')||
-            (userChoice.textContent==='📄'&&computerChoice.textContent==='🪨'){
+            (userChoice.textContent==='📄'&&computerChoice.textContent==='🪨')){
                 userScore.textContent = Number(userScore.textContent)+1;
             } else {
                 computerScore.textContent = Number(computerScore.textContent)+1;
