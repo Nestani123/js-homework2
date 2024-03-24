@@ -17,7 +17,6 @@ choiceBtnList[i].addEventListener('click', () => {
     const rendomNumber = Math.floor(Math.random()*3);
     userChoice.textContent = choiceBtnList[i].textContent;
     computerChoice.textContent = choiceBtnList[rendomNumber].textContent;
-   
 
    if(userChoice.textContent===computerChoice.textContent){
     console.log("Draw");
@@ -35,13 +34,19 @@ choiceBtnList[i].addEventListener('click', () => {
 
 
         function checkResult(result){
-        if(result===10){
+        if(result===7){
             if(userScore.textContent>computerScore.textContent){
-                heading.textContent = "You Lost!";
+                //heading.textContent = "You Lost!";
+                alert("მოიგე!");
+                
             }else if(computerScore.textContent>userScore.textContent){
-                heading.textContent = "You Won!";
+                //heading.textContent = "You Won!";
+                alert("წააგე!");
             }else{
-                heading.textContent = "It's a tie";
+                //heading.textContent = "It's a tie";
+                alert("ფრეა!");
+
+            
             }
         }
     }
